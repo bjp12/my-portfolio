@@ -21,6 +21,11 @@ body {
   gap: 4rem;
 }
 
+::selection {
+  background-color: #8B5E83; /* Changes the highlight background */
+  color: #ffffff;            /* Changes the text color inside the highlight */
+}
+
 /* SIDEBAR */
 .sidebar {
   width: 300px;
@@ -282,3 +287,63 @@ nav ul a:hover {
   color: #8B5E83;
 }
 
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 0;
+    height: auto;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+    min-height: unset;
+    padding: 3rem 0 2rem 0;
+    justify-content: flex-start;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 2rem 0 4rem 0;
+    gap: 3rem;
+    overflow: visible;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 0.95rem;
+  }
+
+  .hero-links {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+  }
+
+  .projects-grid {
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}

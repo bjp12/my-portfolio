@@ -10,7 +10,7 @@ function Projects() {
             title: "Personal Website",
             description: "A personal portfolio website built with React to showcase my projects and experience.",
             tech: ["JavaScript", "React", "HTML", "CSS"],
-            link: "https://github.com/bjp12/bjp12.github.io"
+            link: "https://github.com/bjp12/my-portfolio"
         },
         {
             title: "Set Card Game",
